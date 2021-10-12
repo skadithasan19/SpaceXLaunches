@@ -1,0 +1,16 @@
+query PastLaunches($Offset: Int, $Limit: Int) {
+  launchesPast(offset: $Offset,limit: $Limit) {
+    launch_date_local
+    launch_site {
+      site_name_long
+    }
+    links {
+      article_link
+      video_link
+      mission_patch_small
+      wikipedia
+    }
+    mission_name
+    id
+  }
+}
