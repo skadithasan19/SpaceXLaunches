@@ -18,8 +18,6 @@
 		2D19F39627161A60004BE886 /* SpaceXLaunchesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19F39527161A60004BE886 /* SpaceXLaunchesUITestsLaunchTests.swift */; };
 		2D19F3A827161ACD004BE886 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 2D19F3A727161ACD004BE886 /* Apollo */; };
 		2D19F3AA27161ACD004BE886 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 2D19F3A927161ACD004BE886 /* ApolloWebSocket */; };
-		2D19F3AD27161AF9004BE886 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2D19F3AC27161AF9004BE886 /* URLImage */; };
-		2D19F3AF27161AF9004BE886 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 2D19F3AE27161AF9004BE886 /* URLImageStore */; };
 		2D19F3B227161B89004BE886 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D19F3B127161B89004BE886 /* schema.json */; };
 		2D19F3B427161BC3004BE886 /* spacexlaunchs.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2D19F3B327161BC3004BE886 /* spacexlaunchs.graphql */; };
 		2D19F3B627161C12004BE886 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19F3B527161C12004BE886 /* API.swift */; };
@@ -81,9 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D19F3AF27161AF9004BE886 /* URLImageStore in Frameworks */,
 				2D19F3A827161ACD004BE886 /* Apollo in Frameworks */,
-				2D19F3AD27161AF9004BE886 /* URLImage in Frameworks */,
 				2D19F3AA27161ACD004BE886 /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,8 +238,6 @@
 			packageProductDependencies = (
 				2D19F3A727161ACD004BE886 /* Apollo */,
 				2D19F3A927161ACD004BE886 /* ApolloWebSocket */,
-				2D19F3AC27161AF9004BE886 /* URLImage */,
-				2D19F3AE27161AF9004BE886 /* URLImageStore */,
 			);
 			productName = SpaceXLaunches;
 			productReference = 2D19F37027161A5E004BE886 /* SpaceXLaunches.app */;
@@ -319,7 +313,6 @@
 			mainGroup = 2D19F36727161A5E004BE886;
 			packageReferences = (
 				2D19F3A627161ACD004BE886 /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				2D19F3AB27161AF9004BE886 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 2D19F37127161A5E004BE886 /* Products */;
 			projectDirPath = "";
@@ -757,14 +750,6 @@
 				kind = branch;
 			};
 		};
-		2D19F3AB27161AF9004BE886 /* XCRemoteSwiftPackageReference "url-image" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -777,16 +762,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2D19F3A627161ACD004BE886 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
-		};
-		2D19F3AC27161AF9004BE886 /* URLImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2D19F3AB27161AF9004BE886 /* XCRemoteSwiftPackageReference "url-image" */;
-			productName = URLImage;
-		};
-		2D19F3AE27161AF9004BE886 /* URLImageStore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2D19F3AB27161AF9004BE886 /* XCRemoteSwiftPackageReference "url-image" */;
-			productName = URLImageStore;
 		};
 /* End XCSwiftPackageProductDependency section */
 
